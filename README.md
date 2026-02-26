@@ -118,9 +118,9 @@ docker images
 docker ps -a
 
 
-=======================================================================
+===================================================
 As we need to have project in Linux machine , we need to clone the project from GitHub repository
-================================================================================================
+=
 
 install git 
 --> yum install git -y
