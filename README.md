@@ -124,7 +124,7 @@ As we need to have project in Linux machine , we need to clone the project from 
 
 install git 
 --> yum install git -y
---> git clone https://github.com/ReyazShaik/website.git
+--> git clone https://github.com/gaju0203/AWS-DEVOPS-ci-cd-project-using-ECS-Fargate.git
 --> cd website
 
 
