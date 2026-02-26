@@ -1,6 +1,6 @@
-# 🚀 AWS DevOps CI/CD Pipeline using Docker, ECR, ECS Fargate
+# AWS DevOps CI/CD Pipeline using Docker, ECR, ECS Fargate
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates a **real-time AWS DevOps CI/CD architecture** where an application is containerized using Docker, stored securely in Amazon Elastic Container Registry (ECR), and deployed on Amazon Elastic Container Service (ECS) using Fargate.
 
@@ -9,7 +9,7 @@ The entire deployment process is **fully automated** using AWS CI/CD services, e
 ---
 
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 **CI/CD Flow:**
 
@@ -29,17 +29,17 @@ The entire deployment process is **fully automated** using AWS CI/CD services, e
 
 ## ⚙️ CI/CD Pipeline Explanation
 
-### 1️⃣ Source Stage (GitHub)
+### Source Stage (GitHub)
 - Developer pushes code to GitHub repository
 - CodePipeline detects the change automatically
 
-### 2️⃣ Build Stage (CodeBuild)
+### Build Stage (CodeBuild)
 - CodeBuild reads `buildspec.yml`
 - Builds Docker image
 - Tags the image with build number
 - Pushes image to Amazon ECR
 
-### 3️⃣ Deploy Stage (CodeDeploy + ECS)
+### Deploy Stage (CodeDeploy + ECS)
 - CodeDeploy updates ECS task definition
 - ECS Fargate pulls the latest image from ECR
 - New containers are launched automatically
@@ -47,7 +47,7 @@ The entire deployment process is **fully automated** using AWS CI/CD services, e
 
 ---
 
-## 🐳 Docker Workflow
+## Docker Workflow
 
 - Application is packaged using Docker
 - Dockerfile defines:
@@ -58,7 +58,7 @@ The entire deployment process is **fully automated** using AWS CI/CD services, e
 
 ---
 
-## 🔐 Security
+## Security
 
 - HTTPS enabled using **AWS Certificate Manager (ACM)**
 - IAM roles with least-privilege access
@@ -67,7 +67,7 @@ The entire deployment process is **fully automated** using AWS CI/CD services, e
 
 ---
 
-## 📊 Monitoring & Logging
+## Monitoring & Logging
 
 - Application logs streamed to **CloudWatch Logs**
 - Metrics such as CPU & memory usage monitored
@@ -75,7 +75,7 @@ The entire deployment process is **fully automated** using AWS CI/CD services, e
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 ✔ Fully automated CI/CD pipeline  
 ✔ Serverless container deployment (Fargate)  
@@ -86,7 +86,7 @@ The entire deployment process is **fully automated** using AWS CI/CD services, e
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
 - Production-grade CI/CD pipeline
 - DevOps interview project
@@ -95,7 +95,7 @@ The entire deployment process is **fully automated** using AWS CI/CD services, e
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 **Gaju Sawase**  
 AWS DevOps Engineer (Aspirant)
