@@ -164,13 +164,13 @@ Create a Role with AmazonEC2ContainerRegistryFullAccess access and attach to EC2
 
 IN ECR respository, click on view push commands
 
-aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 289857919920.dkr.ecr.ap-south-1.amazonaws.com
+aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 612782862220.dkr.ecr.ap-south-1.amazonaws.com
 
 docker build -t website .
 
-docker tag website:latest 289857919920.dkr.ecr.ap-south-1.amazonaws.com/website:latest
+docker tag website:latest 612782862220.dkr.ecr.ap-south-1.amazonaws.com/website:latest
 
-docker push 289857919920.dkr.ecr.ap-south-1.amazonaws.com/website:latest
+docker push 612782862220.dkr.ecr.ap-south-1.amazonaws.com/website:latest
 
 See the image in ECR
 
@@ -190,7 +190,7 @@ Task definition family = website-task-df
  --> Role - create if required, if app wants to connect to other services
  --> cpu .25vcpu, .5gb
 Container 1
- --> Name: website, image: URI of image from ECR - 289857919920.dkr.ecr.ap-south-1.amazonaws.com/website:latest
+ --> Name: website, image: URI of image from ECR - 612782862220.dkr.ecr.ap-south-1.amazonaws.com/website:latest
  --> Enable Logs and rest keep defaults
  --> Create
 
@@ -239,7 +239,7 @@ Create a CodeBuild Project
  --> Project Type: default
  --> SOurce 1 Primary: SOurce Provider: GitHub 
      Public Repository: 
-     Repository URL : https://github.com/ReyazShaik/website
+     Repository URL : https://github.com/gaju0203/AWS-DEVOPS-ci-cd-project-using-ECS-Fargate.git
      Leave rest defaults
      Service role: New service role, or select if you have one
      Use BuildSpec: 
